@@ -38,6 +38,7 @@ Template.body.events({
     const target = event.target;
     const text = target.text.value;
 	const description = target.description.value;
+	const date = target.date.value;
 	
     // Insert a task into the collection
     Meteor.call('tasks.insert', text,description);
