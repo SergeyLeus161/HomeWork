@@ -31,6 +31,8 @@ Template.body.events({
   'submit .new-task'(event) {
     // Prevent default browser form submit
     event.preventDefault();
+	
+	console.log(event);
  
     // Get value from form element
     const target = event.target;
